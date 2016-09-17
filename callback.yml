@@ -1,6 +1,6 @@
 ---
 
-- hosts: test_server*
+- hosts: configured_group
   
   tasks:
   
