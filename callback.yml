@@ -1,6 +1,6 @@
 ---
 
-- hosts: configured_group
+- hosts: group1
   
   tasks:
   
@@ -9,3 +9,10 @@
       
     - name: Ensure nginx is started
       service: name=nginx state=started
+      
+- hosts: group2
+
+  tasks:
+  
+    - name: Ensure httpd is installed
+      yum: name=httpd
